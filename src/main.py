@@ -100,8 +100,8 @@ def generate_page(src_path, template_path, dest_path, basepath):
 
     content_text = template_text.replace("{{ Title }}", title)
     content_text = content_text.replace("{{ Content }}", src_html_text)
-    content_text = content_text.replace('href=/"', f'href="{basepath}/')
-    content_text = content_text.replace('src=/"', f'src="{basepath}/')
+    content_text = content_text.replace('href="/', f'href="{basepath}/')
+    content_text = content_text.replace('src="/', f'src="{basepath}/')
 
 
     with open(dest_path, "w") as dest_file:
