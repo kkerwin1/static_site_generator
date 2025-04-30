@@ -77,7 +77,7 @@ def split_delimiter_at_end(text, delimiter, text_type):
         new_nodes.append(TextNode(text_list[0], TextType.NORMAL_TEXT))
         new_nodes.append(TextNode(text_list[1], text_type))
     else:
-        i = 1
+        i = 0
         index = 0
         while i < count:
             index = text.index(delimiter, index, len(text)-dLength)
